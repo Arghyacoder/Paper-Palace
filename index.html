@@ -3,16 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product Sans">
     <title>Home</title>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
+    <!-- Navigation bar code  -->
+    <nav id="nav-bar">
+        <ul class="navlist">
 
+            <!-- Company Logo -->
+            <div class="logo">
+                <img src="Navlogo.png" alt="Logo">
+            </div>
+
+            <!-- Navigation links -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Stationary</a></li>
+            <li><a href="#">Advertisement</a></li>
+            <li><a href="#">Who are we?</a></li>
+        </ul>
+
+        <!-- Here is the code for login and Sign up hyperlink -->
+        <div class="rightnav">
+            <!-- instead of buttons here anchor tags have been used -->
+            <a href="#" id="login">Login</a>
+            <a href="#" id="signup">Sign up</a>
         </div>
-        <div class="banner_name">
-            
-        </div>
-    </div>
+    </nav>
+
+
+
+
+    <!-- Javascript for navbar border highlight scroll event, use other script tag for foreign javascript code. -->
+    <!-- Don't alter the Javascript code below -->
+    <script class="NavBarHighlightScrollEvent">
+        window.onscroll = function() {myFunction()};  
+
+        function myFunction() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("nav-bar").className = "border-color";
+          } else {
+            document.getElementById("nav-bar").className = "";
+          }
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+body {
+    font-family: "Product Sans", sans-serif;
+    margin: 0;
+}
+
+.font-style-of-logo{
+    /* font-family: "Poppins"; */
+    font-family: "Product Sans";
+}
+
+.navigation{
+    background-color: aliceblue;
+}
+
+.svg-navigation{
+    width: 250px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    
+}
+
+.banner-name{
+
+}
