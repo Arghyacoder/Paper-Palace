@@ -1,10 +1,27 @@
+        <ul class="navlist">
+
+            <!-- Company Logo -->
+            <div class="logo">
+                <img src="Navlogo.png" alt="Logo">
+            </div>
+
+            <!-- Navigation links -->
+            <li><a href="#" class="option">Home</a></li>
+            <li><a href="#">Stationary</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>     
+        </ul>  
+    
+    
+    
+    
     <div class="logo_banner">
         <!-- upload square image without background, logo of the company -->
             <img src="Banner.png">
     </div>
 
 
-<!-- our valuable customer label  -->
+    <!-- our valuable customer label  -->
     <div class="ourcustomers">
         <center>
             <p style="font-size: 50px; margin-top: 0;"><u>Our Valuable Customers</u></p> <!--Customers-->

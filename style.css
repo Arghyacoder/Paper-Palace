@@ -1,30 +1,360 @@
-body {
-    font-family: "Product Sans", sans-serif;
+*{
     margin: 0;
+    padding: 0;
+    font-family: "Product Sans", sans-serif;
 }
 
-.font-style-of-logo{
-    /* font-family: "Poppins"; */
-    font-family: "Product Sans";
+body{
+    background-color: #f4fafe;
+    transition: transform 0.5s ease; /* Add transition for smooth movement */
 }
 
-.navigation{
-    background-color: aliceblue;
+/* Class to move the body down */
+body.move-down {
+    transform: translateY(200px);
 }
 
-.svg-navigation{
-    width: 250px;
-}
+                                    /* Navbar code form here */
 
-.header{
+.nav-bar{
+    width: 100%;
     display: flex;
+    position: fixed;
+    z-index: 1; 
+    background-color: #f4fafe;
+}
+
+.display{
+    display: none;
+    position: fixed;
+    top: 10px;
+}
+
+.border-color{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.border-color-m{
+    border: #f4fafe;
+}
+
+.navlist{
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.rightnav{
+    width: 25%;
+    display: flex;
+    /* text-align: right; */
+    justify-content: end;
+}
+
+.rightnav a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+    padding: 35px 20px;
+    font-size: 2vw;                    /* Change font size of Login & SignUP button */ 
+}
+
+.navlist li{
+    list-style: none;
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+    padding: 0px 20px;
+    font-size: 2vw;                    /* Change font size of navbar */
+}
+
+.navlist li a:hover{
+    color: rgb(255, 0, 0);
+    transition: all .2s linear;
+}
+
+#login{
+    color: rgb(0, 197, 0);
+}
+
+#login:hover{
+    background-color: rgb(0, 197, 0);
+    color:rgb(255, 255, 255);
+}
+
+#signup{
+    color: blue;
+}
+
+#signup:hover{
+    background-color: blue;
+    color:rgb(255, 255, 255);
+}
+
+                                /* Till here css written for navbar*/
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 50%;
+}
+
+.logo_banner{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.logo_banner img{
+    width: 200vh;
+    margin-top: 10%;
+}
+
+.homepicture img{
+    width: 90%;
+    margin-top: 30vh;
+}
+
+.homepicture {
+    display: flex;
+    justify-content: center;
+    /* transition: transform 0.5s ease; Add transition for smooth movement */
+}
+
+/* Class to move the homepicture down 
+.homepicture.move-down {
+    transform: translateY(200px); 
+}*/
+
+
+.ourcustomers{
+    margin: 10%;
+}
+
+.cus_img{
+    margin: 5%;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(245, 19, 19);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    margin-top:22px;
+}
+
+
+                            /* footer side css */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #fff0f0;
+    padding: 30px 0 30px 0;
+}
+
+.contactinfo{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.logo{
-    
+.services p{
+    padding-top: 10px;
 }
 
-.banner-name{
+.services{
+    display: flex;
+    flex-direction: column;
+}
 
+.teamname{
+    display: flex;
+}
+
+.salutation{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+    border-radius: 2px;
+    display: inline-block;
+    word-break: normal;
+    padding: 0 4px;
+    margin-left: 4px;
+}
+
+.items{
+    padding: 0 15px 0 15px;
+}
+
+.slinks{
+    margin: 5px;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+.line{
+    width: 33px;
+    height: 4px;
+    background-color: black;
+    margin: 3px 3px;
+}
+
+                        /* responsiveness code starts from here  */
+
+@media only screen and (max-width: 900px) and (min-width: 800px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .items {
+        padding: 50px 15px 0 15px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    body {
+        transition: transform 0.5s ease; /* Add transition for smooth movement */
+    }
+
+    body.move-down {
+        transform: translateY(200px); 
+    }
+
+    .visibility {
+        opacity: 0; /* Improved here: Hide by default using opacity */
+        transition: opacity 0.3s ease; /* Improved here: Add transition for smooth effect */
+    }
+
+    .invisible{
+        opacity: 0;
+    }
+
+    .display{
+        display: block;
+        position: fixed;
+        top: 10px;
+    }
+    
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Improved here: Center align items */
+        position: fixed;
+        z-index: 1; 
+        background-color: #f4fafe;
+        height: 40px;
+        transition: height 0.5s ease;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    .nav-bar.expanded {
+        height: auto; /* Expanded height */
+    }
+    
+    .navlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Improved here: Center align items */
+        opacity: 0; /* Improved here: Hide by default using opacity */
+        transition: opacity 0.3s ease; /* Improved here: Add transition for smooth effect */
+        margin: 0; /* Improved here: Remove default margin */
+        padding: 0; /* Improved here: Remove default padding */
+        list-style: none; /* Improved here: Remove default list styling */
+    }
+
+    .light{
+        color: red;
+    }
+    
+    .navlist.visible {
+        opacity: 1; /* Improved here: Show when visible class is added */
+    }
+    
+    .navlist li {
+        margin: 5px 0; /* Improved here: Add margin between list items */
+    }
+    
+    .navlist li a {
+        padding: 0px 20px;
+        font-size: 3vw; /* Change font size of navbar */
+        text-align: center; /* Improved here: Center text */
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    .rightnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Improved here: Center align items */
+        opacity: 0; /* Improved here: Hide by default using opacity */
+        transition: opacity 0.3s ease; /* Improved here: Add transition for smooth effect */
+    }
+    
+    .rightnav.visible {
+        opacity: 1; /* Improved here: Show when visible class is added */
+    }
+    
+    .rightnav a {
+        padding: 5px 21px;
+        font-size: 3vw; /* Change font size of Login & SignUP button */
+        text-align: center; /* Improved here: Center text */
+    }
+    
+    .burger {
+        display: block;
+        right: 7px;
+        top: 7px;
+        cursor: pointer; /* Improved here: Add cursor pointer */
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .items {
+        padding: 50px 15px 0 15px;
+    }
+    
+    .customers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .homepicture img {
+        width: 90%;
+        margin-top: 10vh;
+    }
+    
+    
 }
