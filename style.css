@@ -50,12 +50,14 @@ body.move-down {
     width: 25%;
     display: flex;
     /* text-align: right; */
-    justify-content: end;
+    /* justify-content: end; */
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .rightnav a{
     text-decoration: none;
-    color: rgb(117, 117, 117);
+    color: rgb(0, 0, 0);
     padding: 35px 20px;
     font-size: 2vw;                    /* Change font size of Login & SignUP button */ 
 }
@@ -66,13 +68,13 @@ body.move-down {
 
 .navlist li a{
     text-decoration: none;
-    color: rgb(117, 117, 117);
-    padding: 0px 20px;
+    color: rgb(0, 0, 0);
+    padding: 35px 20px;
     font-size: 2vw;                    /* Change font size of navbar */
 }
 
 .navlist li a:hover{
-    color: rgb(0, 8, 255);
+    color: rgb(255, 255, 255);
     transition: all .2s linear;
 }
 
@@ -158,6 +160,13 @@ body.move-down {
     margin-top:22px;
 }
 
+.float:hover{
+    width:70px;
+	height:70px;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+
 
                             /* footer side css */
 
@@ -205,6 +214,14 @@ body.move-down {
     margin: 3px 3px;
 }
 
+/* test */
+
+.options:hover{
+    background-color: black;
+    padding: 35px;
+}
+
+
                         /* responsiveness code starts from here  */
 
 @media only screen and (max-width: 900px) and (min-width: 800px){
@@ -221,6 +238,11 @@ body.move-down {
 
 @media only screen and (max-width: 800px){
 
+    .options:hover{
+        background-color: black;
+        padding: 10px;
+    }
+
     body {
         transition: transform 0.5s ease; /* Add transition for smooth movement */
     }
@@ -236,6 +258,8 @@ body.move-down {
 
     .invisible{
         opacity: 0;
+        position: relative;
+        left: 0px;
     }
 
     .display{
