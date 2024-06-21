@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product Sans">
+    <link rel="shortcut icon" href="Navlogo.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="images/Navlogo.png">
+    <title>Login</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="display">Home</div>
+
+        <ul class="navlist visibility">
+            <!-- Company Logo -->
+            <div class="logo">
+                <img src="images/Navlogo.png" alt="Logo">
+            </div>
+
+            <!-- Navigation links -->
+            <li><a href="#" class="options">Home</a></li>
+            <li><a href="#" class="options">Stationary</a></li>
+            <li><a href="#" class="options">Services</a></li>
+            <li><a href="#" class="options">About</a></li>
+        </ul>
+
+        <!-- Here is the code for login and Sign up hyperlink -->
+        <div class="rightnav visibility">
+            <a href="#" id="login">Login</a>
+            <!-- <a href="#" id="signup">Sign up</a> -->
+        </div>
+    </div>
+
+
+
+
+
+    <div class="centerLogin">
+        <div class="containerLogin">
+            <div class="inputLogin">
+                <img src="images/Banner.png" alt="" class="pictureLogin">
+                <form action=" " method="post" class="inputLogin">
+                    <input type="email" name="email" id="email" class="input" placeholder="email">
+                    <input type="password" name="password" id="password" class="input" placeholder="password">
+                    <div class="lineLogin">
+                        <a href="" class="forgotPassword">forgot password</a>
+                        <input type="submit" value="Login" class="buttonLogin">
+                    </div>
+                </form>
+            </div>
+            <div class="contentLogin">
+                <h2>Login with</h2>
+                <p>If you are new please register first.</p>
+                <!-- here put the api for google login -->
+                <br>
+                <div class="extpage">
+                    <a href="" class="signupLink">Register</a>
+                    <a href="" class="emplogin">Employee login</a>
+                </div>
+                <br>
+                <hr>
+                <center>
+                    <p>Paper Palace &#169; 2024</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Javascript for navbar border highlight scroll event, use other script tag for foreign javascript code. -->
+    <!-- Don't alter the Javascript code below -->
+    <script class="NavBarHighlightScrollEvent">
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            const navBars = document.querySelectorAll('.nav-bar');
+
+            navBars.forEach(navBar => {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    navBar.classList.add("border-color");
+                } else {
+                    navBar.classList.remove("border-color");
+                }
+            });
+        }
+    </script>
+
+    <!-- Script for navbar burger button for Android only do not alter any changes -->
+    <script>
+        const burger = document.querySelector('.burger');
+        const navbar = document.querySelector('.nav-bar');
+        const rightnav = document.querySelector('.rightnav');
+        const navlist = document.querySelector('.navlist');
+        const display = document.querySelector('.display');
+
+        burger.addEventListener('click', () => {
+            navlist.classList.toggle('visible'); // Improved here: Toggle the visibility of navlist
+            rightnav.classList.toggle('visible'); // Improved here: Toggle the visibility of rightnav
+            navbar.classList.toggle('expanded');
+            display.classList.toggle('invisible');
+        });
+    </script>
+</body>
+</html>
