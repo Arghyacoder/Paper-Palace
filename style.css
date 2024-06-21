@@ -221,6 +221,135 @@ body.move-down {
     padding: 35px;
 }
 
+/* for login page  */
+
+.centerLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLogin{
+    margin-top: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputLogin{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10vh;
+}
+
+.input{
+    width: 50vh;
+    height: 6vh;
+    margin: 6px;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-width: 1px;
+}
+
+.buttonLogin{
+    width: 65px;
+    margin: 6px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    /* background: limegreen; */
+    background-color: #000000;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.25s;
+}
+
+.buttonLogin:hover{
+    background: red;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.25s;
+}
+
+.forgotPassword{
+    margin: 6px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.forgotPassword:hover{
+    background-color: rgb(0, 81, 255);
+    color: white;
+}
+
+.lineLogin{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.pictureLogin{
+    width: 60vh;
+}
+
+.signupLink{
+    display: block;
+    width: 60px;
+    margin: 5px;
+    padding: 9px;
+    font-size: 16px;
+    border-radius: 35px;
+    border: none;
+    /* background: limegreen; */
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.25s;
+}
+
+.signupLink:hover{
+    background-color: blue;
+    transition-property: all;
+    transition-duration: 0.25s;
+}
+
+.contentLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.emplogin{
+    display: block;
+    width: 105px;
+    margin: 5px;
+    padding: 9px;
+    font-size: 16px;
+    border-radius: 35px;
+    border: none;
+    /* background: limegreen; */
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.25s;
+}
+
+.emplogin:hover{
+    background-color: limegreen;
+    transition-property: all;
+    transition-duration: 0.25s;
+}
+
+.extpage{
+    display:flex;
+}
+
+
 
                         /* responsiveness code starts from here  */
 
@@ -237,6 +366,31 @@ body.move-down {
 }
 
 @media only screen and (max-width: 800px){
+
+    .buttonLogin{
+        width: 150px;
+    }
+
+    .contentLogin {
+        align-items: center;
+    }
+
+    .lineLogin {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .inputLogin{
+        margin-right: 0vh;
+        align-items: center;
+    }
+
+    .containerLogin{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+    }
 
     .options:hover{
         background-color: black;
