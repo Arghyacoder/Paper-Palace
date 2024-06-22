@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product Sans">
     <link rel="shortcut icon" href="Navlogo.png" type="image/x-icon">
     <link rel="icon" type="image/x-icon" href="images/Navlogo.png">
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
     <title>Login</title>
 </head>
 <body>
@@ -27,7 +31,7 @@
             </div>
 
             <!-- Navigation links -->
-            <li><a href="#" class="options">Home</a></li>
+            <li><a href="index.html" class="options">Home</a></li>
             <li><a href="#" class="options">Stationary</a></li>
             <li><a href="#" class="options">Services</a></li>
             <li><a href="#" class="options">About</a></li>
@@ -35,8 +39,8 @@
 
         <!-- Here is the code for login and Sign up hyperlink -->
         <div class="rightnav visibility">
-            <a href="#" id="login">Login</a>
-            <!-- <a href="#" id="signup">Sign up</a> -->
+            <a href="login.html" id="login">Login</a>
+            <a href="#" id="signup">Sign up</a>
         </div>
     </div>
 
@@ -58,12 +62,15 @@
                 </form>
             </div>
             <div class="contentLogin">
-                <h2>Login with</h2>
-                <p>If you are new please register first.</p>
-                <!-- here put the api for google login -->
+                <h2 style="margin:25px;">Login with</h2>
+                <!-- <p>If you are new please register first.</p> -->
                 <br>
                 <div class="extpage">
-                    <a href="" class="signupLink">Register</a>
+                    <!-- <a href="" class="signupLink">Register</a> -->
+                    <!-- here put the api for google login -->
+                    <div class="g-signin2 gsign" data-onsuccess="onSignIn"></div>
+                    <br>
+                    <br>
                     <a href="" class="emplogin">Employee login</a>
                 </div>
                 <br>
@@ -74,6 +81,7 @@
             </div>
         </div>
     </div>
+    
 
 
 
