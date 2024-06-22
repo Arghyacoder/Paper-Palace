@@ -326,8 +326,8 @@ body.move-down {
 .emplogin{
     display: block;
     width: 105px;
-    margin: 5px;
-    padding: 9px;
+    margin-top: 10px;
+    padding: 8px;
     font-size: 16px;
     border-radius: 35px;
     border: none;
@@ -347,6 +347,11 @@ body.move-down {
 
 .extpage{
     display:flex;
+    flex-direction: column;
+}
+
+.gsign{
+    padding: 0px;
 }
 
 
@@ -366,9 +371,24 @@ body.move-down {
 }
 
 @media only screen and (max-width: 800px){
+    
+    .pictureLogin {
+        width: 100vw;
+    }
+
+    .input{
+        width: 85vw;
+        height: 10vw;
+        margin: 10px;
+        border-radius: 3px;
+        padding-left: 10px;
+        font-size: 25px;
+        border-width: 1px;
+    }
 
     .buttonLogin{
-        width: 150px;
+        width: 87vw;
+        font-size: 25px;
     }
 
     .contentLogin {
@@ -382,7 +402,7 @@ body.move-down {
     }
 
     .inputLogin{
-        margin-right: 0vh;
+        margin-right: 0vw;
         align-items: center;
     }
 
